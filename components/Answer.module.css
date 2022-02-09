@@ -10,12 +10,14 @@
 	margin-bottom: 15px;
 }
 
-.circle {
+.circle,
+.correct {
 	margin-left: 21px;
 	height: 27.75px;
 	width: 27.75px;
 	border: 3px solid #6231ec;
 	border-radius: 50%;
+	background-color: #6331ec00;
 }
 
 .text {
@@ -25,7 +27,7 @@
 	font-weight: 500;
 }
 
-/* --------- FADE ANIMATION --------- */
+/* --------- SCROLL ANIMATION --------- */
 
 @keyframes scroll {
 	0% {
@@ -95,4 +97,63 @@
 }
 .scroll:nth-child(4) {
 	animation-delay: 610ms;
+}
+
+/* --------- SELECT ANIMATION --------- */
+
+@keyframes select {
+	0%,
+	40% {
+		background-color: #6331ec00;
+	}
+	45% {
+		background-color: #6231ec;
+	}
+	100% {
+		background-color: #6231ec;
+	}
+}
+@-o-keyframes select {
+	0%,
+	40% {
+		background-color: #6331ec00;
+	}
+	45% {
+		background-color: #6231ec;
+	}
+	100% {
+		background-color: #6231ec;
+	}
+}
+@-moz-keyframes select {
+	0%,
+	40% {
+		background-color: #6331ec00;
+	}
+	45% {
+		background-color: #6231ec;
+	}
+	100% {
+		background-color: #6231ec;
+	}
+}
+@-webkit-keyframes select {
+	0%,
+	40% {
+		background-color: #6331ec00;
+	}
+	45% {
+		background-color: #6231ec;
+	}
+	100% {
+		background-color: #6231ec;
+	}
+}
+
+.correct {
+	animation: select 9s none;
+	-o-animation: select 9s none;
+	-moz-animation: select 9s none;
+	-webkit-animation: select 9s none;
+	animation-iteration-count: infinite;
 }
