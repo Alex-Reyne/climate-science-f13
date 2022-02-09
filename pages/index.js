@@ -14,7 +14,9 @@ export default function Home() {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<main className={styles.main}>
-				<Question />
+				<Question
+					text={`Which of the below statements about electricity is not true?`}
+				/>
 			</main>
 		</div>
 	);
