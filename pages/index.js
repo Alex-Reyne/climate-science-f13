@@ -7,9 +7,17 @@ const q = {
 	question: {
 		text: `Which of the below statements about electricity is not true?`,
 		answers: [
-			{ text: 'Electricity is measured in units called watts', correct: false },
-			{ text: 'Electricity flows at the speed of light', correct: false },
-			{ text: 'Electricity is a primary energy source', correct: true },
+			{
+				id: 1,
+				text: 'Electricity is measured in units called watts',
+				correct: false,
+			},
+			{
+				id: 2,
+				text: 'Electricity flows at the speed of light',
+				correct: false,
+			},
+			{ id: 3, text: 'Electricity is a primary energy source', correct: true },
 		],
 	},
 };
