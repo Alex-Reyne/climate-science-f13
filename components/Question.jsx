@@ -1,14 +1,17 @@
 import Answer from './Answer';
 import styles from './Question.module.css';
 
-export default function Question({ text }) {
+export default function Question({ question, answers }) {
 	return (
 		<div className={styles.fade}>
 			<div className={styles.container}>
-				<h3 className={styles.question}>{text}</h3>
-				<Answer text={`Electricity is measured in units called watts`} />
-				<Answer text={`Electricity flows at the speed of light`} />
-				<Answer text={`Electricity is a primary energy source`} correct />
+				<h3 className={styles.question}>{question}</h3>
+				{/* Map through the answers that were passed in through
+        props and return a new `Answer` component for each one. */}
+				{answers.map(({ text, correct }) => {
+					console.log(text, correct);
+					return <Answer answer={text} correct={correct} />;
+				})}
 			</div>
 		</div>
 	);
