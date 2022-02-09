@@ -16,3 +16,64 @@
 	text-align: center;
 	font-weight: 600;
 }
+
+/* --------- FADE IN ANIMATION --------- */
+
+@keyframes fadeAnimation {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@-o-keyframes fadeAnimation {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes fadeAnimation {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadeAnimation {
+	0% {
+		opacity: 0;
+	}
+	30% {
+		opacity: 1;
+	}
+	70% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.fadein {
+	-webkit-animation: fadeAnimation ease 10s;
+	-moz-animation: fadeAnimation ease 10s;
+	-o-animation: fadeAnimation ease 10s;
+	animation: fadeAnimation ease 10s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+}
