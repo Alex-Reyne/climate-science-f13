@@ -20,60 +20,45 @@
 /* --------- FADE IN ANIMATION --------- */
 
 @keyframes fadeAnimation {
-	0% {
-		opacity: 0;
-	}
 	20% {
 		opacity: 1;
 	}
-	100% {
+	80% {
 		opacity: 1;
 	}
 }
 @-o-keyframes fadeAnimation {
-	0% {
-		opacity: 0;
-	}
 	20% {
 		opacity: 1;
 	}
-	100% {
+	80% {
 		opacity: 1;
 	}
 }
 
 @-moz-keyframes fadeAnimation {
-	0% {
-		opacity: 0;
-	}
 	20% {
 		opacity: 1;
 	}
-	100% {
+	80% {
 		opacity: 1;
 	}
 }
 
 @-webkit-keyframes fadeAnimation {
-	0% {
-		opacity: 0;
-	}
-	30% {
+	20% {
 		opacity: 1;
 	}
-	70% {
+	80% {
 		opacity: 1;
-	}
-	100% {
-		opacity: 0;
 	}
 }
 
-.fadein {
-	-webkit-animation: fadeAnimation ease 10s;
-	-moz-animation: fadeAnimation ease 10s;
-	-o-animation: fadeAnimation ease 10s;
-	animation: fadeAnimation ease 10s;
+.fade {
+	opacity: 0;
+	-webkit-animation: fadeAnimation 9s linear forwards;
+	-moz-animation: fadeAnimation 9s linear forwards;
+	-o-animation: fadeAnimation 9s linear forwards;
+	animation: fadeAnimation 9s linear forwards;
 	animation-iteration-count: infinite;
-	animation-fill-mode: forwards;
 }
