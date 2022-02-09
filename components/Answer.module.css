@@ -24,3 +24,75 @@
 	color: #6231ec;
 	font-weight: 500;
 }
+
+/* --------- FADE ANIMATION --------- */
+
+@keyframes scroll {
+	0% {
+		transform: translateY(300px);
+	}
+	20% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+	80% {
+		opacity: 1;
+	}
+}
+@-o-keyframes scroll {
+	0% {
+		transform: translateY(300px);
+	}
+	20% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+	80% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes scroll {
+	0% {
+		transform: translateY(300px);
+	}
+	20% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+	80% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes scroll {
+	0% {
+		transform: translateY(300px);
+	}
+	20% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+	80% {
+		opacity: 1;
+	}
+}
+
+.scroll {
+	opacity: 0;
+	-webkit-animation: scroll 9s linear both;
+	-moz-animation: scroll 9s linear both;
+	-o-animation: scroll 9s linear both;
+	animation: scroll 9s linear both;
+	animation-iteration-count: infinite;
+}
+
+.scroll:nth-child(1) {
+	animation-delay: 0ms;
+}
+.scroll:nth-child(3) {
+	animation-delay: 310ms;
+}
+.scroll:nth-child(4) {
+	animation-delay: 610ms;
+}

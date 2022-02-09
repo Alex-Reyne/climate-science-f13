@@ -10,7 +10,7 @@ export default function Question() {
 				</h3>
 				<Answer text={`Electricity is measured in units called watts`} />
 				<Answer text={`Electricity flows at the speed of light`} />
-				<Answer text={`Electricity is a primary energy source`} />
+				<Answer text={`Electricity is a primary energy source`} correct />
 			</div>
 		</div>
 	);
